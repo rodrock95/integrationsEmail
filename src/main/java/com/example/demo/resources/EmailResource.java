@@ -19,7 +19,7 @@ public class EmailResource {
 
 	@PostMapping
 	public ResponseEntity<Void> send(@RequestBody EmailDTO dto){
-		service.sendEMail(dto);
+		service.sendEmail(dto);
 		return ResponseEntity.noContent().build();
 	}
 }
